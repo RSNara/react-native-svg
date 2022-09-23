@@ -10,6 +10,8 @@ import { SvgCss, SvgWithCss } from './css';
 import { SvgProps } from './elements/Svg';
 import NativeSvgRenderableManager from './fabric/NativeSvgRenderableModule';
 
+const {getRawResource} = NativeSvgRenderableManager || {};
+
 export function getUriFromSource(source: ImageSourcePropType) {
   const resolvedAssetSource = Image.resolveAssetSource(source);
   return resolvedAssetSource.uri;
@@ -26,7 +28,7 @@ export function isUriAnAndroidResourceIdentifier(uri?: string) {
 
 export async function loadAndroidRawResource(uri: string) {
   try {
-    return await NativeSvgRenderableManager?.getRawResource(uri);
+    return await getRawResource(uri);
   } catch (e) {
     console.error(
       'Error in RawResourceUtils while trying to natively load an Android raw resource: ',
