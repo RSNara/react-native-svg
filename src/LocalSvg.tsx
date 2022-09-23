@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Component } from 'react';
 import {
-  NativeModules,
   Platform,
   Image,
   ImageSourcePropType,
