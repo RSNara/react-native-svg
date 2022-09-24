@@ -1905,9 +1905,9 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
   }
 
   @ReactProp(name = "stroke")
-  public void setStroke(T node, @Nullable Dynamic strokeColors) {
-    node.setStroke(strokeColors);
-  }
+  // public void setStroke(T node, @Nullable Dynamic strokeColors) {
+  //   node.setStroke(strokeColors);
+  // }
 
   public void setStroke(T view, @Nullable ReadableMap value) {
     view.setStroke(value);
