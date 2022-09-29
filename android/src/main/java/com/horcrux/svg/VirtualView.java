@@ -384,6 +384,10 @@ public abstract class VirtualView extends ReactViewGroup {
     ViewParent parent = getParent();
 
     if (parent == null) {
+      FLog.e(
+        ReactConstants.TAG,
+        "RNSVG: " + getClass().getName() + ".getSvgView(): getParent() returned null."
+      );
       return null;
     } else if (parent instanceof SvgView) {
       svgView = (SvgView) parent;
