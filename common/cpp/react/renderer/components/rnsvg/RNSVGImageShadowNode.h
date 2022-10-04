@@ -14,7 +14,7 @@
 #include <react/renderer/imagemanager/primitives.h>
 #include <jsi/jsi.h>
 
-#include "RNSVGImageState.h"
+#include <rnsvg/RNSVGImageState.h>
 
 namespace facebook {
 namespace react {

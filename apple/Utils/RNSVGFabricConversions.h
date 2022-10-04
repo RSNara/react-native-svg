@@ -8,7 +8,6 @@
 #import "RNSVGVBMOS.h"
 
 #import <React/RCTConversions.h>
-#import <React/RCTFabricComponentsPlugins.h>
 
 template <typename T>
 RNSVGBrush *brushFromColorStruct(T fillObject)

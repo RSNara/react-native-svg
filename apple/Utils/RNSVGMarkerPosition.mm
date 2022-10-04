@@ -22,6 +22,12 @@
   return newElement;
 }
 
+void PathIsDone()
+{
+  float angle = CurrentAngle(kEndMarker);
+  [positions_ addObject:[RNSVGMarkerPosition markerPosition:kEndMarker origin:origin_ angle:angle]];
+}
+
 + (NSArray<RNSVGMarkerPosition *> *)fromCGPath:(CGPathRef)path
 {
   positions_ = [[NSMutableArray alloc] init];
@@ -31,12 +37,6 @@
   CGPathApply(path, (__bridge void *)positions_, UpdateFromPathElement);
   PathIsDone();
   return positions_;
-}
-
-void PathIsDone()
-{
-  float angle = CurrentAngle(kEndMarker);
-  [positions_ addObject:[RNSVGMarkerPosition markerPosition:kEndMarker origin:origin_ angle:angle]];
 }
 
 static double BisectingAngle(double in_angle, double out_angle)
