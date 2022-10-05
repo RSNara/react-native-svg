@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#include <rnsvg/RNSVGImageState.h>
+#include "RNSVGImageState.h"
 
 namespace facebook {
 namespace react {

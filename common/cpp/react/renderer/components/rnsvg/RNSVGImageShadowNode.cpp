@@ -10,7 +10,7 @@
 
 #include <react/renderer/core/LayoutContext.h>
 
-#include <rnsvg/RNSVGImageShadowNode.h>
+#include "RNSVGImageShadowNode.h"
 
 namespace facebook {
 namespace react {
@@ -50,7 +50,7 @@ void RNSVGImageShadowNode::updateStateIfNeeded() {
       imageSource,
       imageManager_->requestImage(imageSource, getSurfaceId()),
       //getConcreteProps().blurRadius
-
+      
   };
   setStateData(std::move(state));
 }

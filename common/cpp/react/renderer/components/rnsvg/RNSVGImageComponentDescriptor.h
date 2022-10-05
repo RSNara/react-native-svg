@@ -11,7 +11,7 @@
 #include <react/renderer/imagemanager/ImageManager.h>
 #include <react/utils/ContextContainer.h>
 
-#include <rnsvg/RNSVGImageShadowNode.h>
+#include "RNSVGImageShadowNode.h"
 
 namespace facebook {
 namespace react {

@@ -28,6 +28,7 @@
 
 #ifdef RN_FABRIC_ENABLED
 #import <React/RCTConversions.h>
+#import <React/RCTFabricComponentsPlugins.h>
 #import <React/RCTImageResponseObserverProxy.h>
 #import <React/RCTImageSource.h>
 #import <react/renderer/components/rnsvg/ComponentDescriptors.h>
